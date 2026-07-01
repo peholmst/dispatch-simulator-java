@@ -1,7 +1,5 @@
-package net.pkhapps.dispatchsimulator.engine.route;
+package net.pkhapps.dispatchsimulator.engine.world;
 
-
-import net.pkhapps.dispatchsimulator.engine.geo.GameWorldPoint;
 
 import java.util.Optional;
 

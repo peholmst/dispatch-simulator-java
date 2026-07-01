@@ -1,4 +1,4 @@
-package net.pkhapps.dispatchsimulator.engine.geo;
+package net.pkhapps.dispatchsimulator.engine.world;
 
 /**
  * Represents a geographical point in the game world.

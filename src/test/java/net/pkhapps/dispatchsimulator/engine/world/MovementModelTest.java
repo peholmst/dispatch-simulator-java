@@ -1,9 +1,6 @@
-package net.pkhapps.dispatchsimulator.engine.route;
+package net.pkhapps.dispatchsimulator.engine.world;
 
 import net.pkhapps.dispatchsimulator.engine.clock.GameTimestamp;
-import net.pkhapps.dispatchsimulator.engine.geo.Distance;
-import net.pkhapps.dispatchsimulator.engine.geo.GameWorldPoint;
-import net.pkhapps.dispatchsimulator.engine.geo.Speed;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;

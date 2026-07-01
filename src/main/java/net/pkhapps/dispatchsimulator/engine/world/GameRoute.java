@@ -1,8 +1,4 @@
-package net.pkhapps.dispatchsimulator.engine.route;
-
-import net.pkhapps.dispatchsimulator.engine.geo.Distance;
-import net.pkhapps.dispatchsimulator.engine.geo.GameWorldPoint;
-import net.pkhapps.dispatchsimulator.engine.geo.Speed;
+package net.pkhapps.dispatchsimulator.engine.world;
 
 import java.time.Duration;
 import java.util.List;

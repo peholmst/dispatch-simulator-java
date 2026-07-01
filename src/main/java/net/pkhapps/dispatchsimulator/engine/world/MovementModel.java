@@ -1,9 +1,7 @@
-package net.pkhapps.dispatchsimulator.engine.route;
+package net.pkhapps.dispatchsimulator.engine.world;
 
 import net.pkhapps.dispatchsimulator.annotation.NotThreadSafe;
 import net.pkhapps.dispatchsimulator.engine.clock.GameTimestamp;
-import net.pkhapps.dispatchsimulator.engine.geo.GameWorldPoint;
-import net.pkhapps.dispatchsimulator.engine.geo.Speed;
 import org.jspecify.annotations.Nullable;
 
 /**
