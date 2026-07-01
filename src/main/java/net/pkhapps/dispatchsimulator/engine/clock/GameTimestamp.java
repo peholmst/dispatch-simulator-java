@@ -9,10 +9,32 @@ import java.time.Duration;
  */
 public record GameTimestamp(Duration timeSinceStart) {
 
+    // TODO Maybe store a long instead of a Duration?
+
     public GameTimestamp {
         if (timeSinceStart.isNegative()) {
             throw new IllegalArgumentException("timeSinceStart cannot be negative");
         }
+    }
+
+    /**
+     * Creates a new {@code GameTimestamp} with the given number of seconds.
+     *
+     * @param secondsSinceStart the number of seconds that has passed since the game started.
+     * @return a new {@code GameTimestamp}.
+     */
+    public static GameTimestamp ofSeconds(long secondsSinceStart) {
+        return new GameTimestamp(Duration.ofSeconds(secondsSinceStart));
+    }
+
+    /**
+     * Creates a new {@code GameTimestamp} with the given number of milliseconds.
+     *
+     * @param millisecondsSinceStart the number of milliseconds that has passed since the game started.
+     * @return a new {@code GameTimestamp}.
+     */
+    public static GameTimestamp ofMilliseconds(long millisecondsSinceStart) {
+        return new GameTimestamp(Duration.ofMillis(millisecondsSinceStart));
     }
 
     /**

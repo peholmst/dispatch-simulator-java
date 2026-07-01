@@ -20,12 +20,16 @@ public interface GameRoute {
     /**
      * Checks if the given point corresponds to the start of this route.
      */
-    boolean isStart(GameWorldPoint point);
+    default boolean isStart(GameWorldPoint point) {
+        return geometry().getFirst().equals(point);
+    }
 
     /**
      * Checks if the given point corresponds to the end of this route.
      */
-    boolean isEnd(GameWorldPoint point);
+    default boolean isEnd(GameWorldPoint point) {
+        return geometry().getLast().equals(point);
+    }
 
     /**
      * Calculates where you would be after traveling this route for the given duration with the given average speed.
